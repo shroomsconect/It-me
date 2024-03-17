@@ -1,0 +1,20 @@
+@import '../../variable.scss';
+
+.PORTFOLIO-LegalNotice {
+	padding: 0.3vh 0.3vh 0 0.3vh;
+	color: $LegalNotice-main-text-color;
+
+	p {
+		margin-left: 80px;
+		margin-right: 80px;
+	}
+}
+
+@media (max-width: 768px) {
+	.PORTFOLIO-LegalNotice {
+		p {
+			margin-left: 30px;
+			margin-right: 30px;
+		}
+	}
+}

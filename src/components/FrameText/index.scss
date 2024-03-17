@@ -1,0 +1,26 @@
+@import '../../variable.scss';
+
+.PORTFOLIO-FrameText {
+	margin: 0 0 30px 0;
+	padding: 0 25px;
+	max-width: 750px;
+	&-right {
+		margin: 0 0 30px auto;
+	}
+
+	&-Personal {
+		border: 5px dashed $Personal-secondary-border-color;
+		border-radius: 10px;
+	}
+
+	&-Recruiter {
+		margin-top: 10px;
+		border: 5px solid $Recruiter-main-border-color;
+		border-radius: 10px;
+		box-shadow: 7px 7px 15px 0px black;
+
+		&.PORTFOLIO-FrameText-right {
+			box-shadow: -7px 7px 15px 0px black;
+		}
+	}
+}

@@ -1,0 +1,59 @@
+.PORTFOLIO-ImageWavy {
+	height: 51.3vw;
+	max-height: 740px;
+	position: relative;
+	overflow: hidden;
+
+	&-wave {
+		position: absolute;
+		bottom: 0;
+		z-index: 1;
+	}
+
+	&-image {
+		width: 100%;
+		position: absolute;
+		top: -13vw;
+
+		&-container {
+			height: 49.3vw;
+			max-height: 710px;
+			overflow: hidden;
+		}
+	}
+}
+
+.PORTFOLIO-ImageWavy-inChild {
+	position: relative;
+	padding-bottom: 48px;
+
+	&-wave {
+		position: absolute;
+		bottom: 0;
+		z-index: 1;
+	}
+}
+
+@media (min-width: 1440px) {
+	.PORTFOLIO-ImageWavy {
+		&-image {
+			top: -187.2px;
+		}
+	}
+
+	.PORTFOLIO-ImageWavy-inChild {
+		padding-bottom: 48px;
+
+		&-wave {
+			position: absolute;
+			bottom: 0;
+			z-index: 1;
+		}
+	}
+}
+
+@media (max-width: 1440px) {
+	.PORTFOLIO-ImageWavy-inChild {
+		padding-bottom: 3.4vw;
+	}
+}

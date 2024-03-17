@@ -1,0 +1,124 @@
+@import '../../variable.scss';
+
+.PORTFOLIO-Recruiter {
+	display: flex;
+
+	&-title {
+		position: relative;
+		font-size: 4rem;
+		line-height: 1.4em;
+		color: transparent;
+		text-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+		text-transform: uppercase;
+		text-align: center;
+		background-image: url('../../assets/background-Recruiter.webp');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-clip: text;
+		background-size: cover;
+
+		&-container {
+			&::before {
+				content: '';
+				position: absolute;
+				background-color: rgba($color: #000000, $alpha: 0.4);
+				width: 100%;
+				height: 100%;
+			}
+
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			height: 380px;
+			background-image: url('../../assets/background-Recruiter.webp');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		&-sub {
+			font-size: 70%;
+		}
+	}
+
+	&-buttonCV {
+		a {
+			font-size: 22px;
+		}
+
+		&-container {
+			display: flex;
+			justify-content: center;
+			margin-bottom: 20px;
+		}
+	}
+
+	&-contact {
+		display: flex;
+		flex-direction: column;
+
+		input,
+		textarea {
+			font-size: 1.2rem;
+			margin-bottom: 20px;
+			border: 2px solid $Recruiter-main-border-color;
+			border-radius: 7px;
+			max-width: 98%;
+		}
+
+		input {
+			height: 30px;
+			max-width: 400px;
+		}
+
+		div input {
+			max-width: 98%;
+		}
+
+		&-button {
+			span {
+				color: $main-link-color;
+				font-size: 22px;
+			}
+
+			&-container {
+				display: flex;
+				justify-content: center;
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
+
+@media (max-width: 1440px) {
+	.PORTFOLIO-Recruiter {
+		&-title {
+			font-size: 4.89vw;
+
+			&-container {
+				height: 26.3vw;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.PORTFOLIO-Recruiter {
+		&-about {
+			line-height: 1.7em;
+		}
+
+		&-buttonCV a {
+			font-size: 14px;
+		}
+
+		&-contact {
+			&-button {
+				span {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}

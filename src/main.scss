@@ -1,0 +1,78 @@
+@import './variable.scss';
+
+html,
+#root {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	color: $main-text-color;
+}
+
+p {
+	font-size: 1.4rem;
+}
+
+a,
+a:visited,
+a:focus,
+a:active,
+a:hover {
+	color: $main-link-color;
+	text-decoration: none;
+}
+
+a:focus,
+a:active,
+a:hover {
+	text-decoration: underline;
+}
+
+span.code {
+	padding: 4px;
+	border-radius: 17px;
+	border-left: 4px solid;
+	border-right: 4px solid;
+	font-weight: bold;
+	&-php {
+		border-color: #777bb3;
+	}
+	&-js {
+		border-color: #e5a228;
+	}
+	&-html {
+		border-color: #d25836;
+	}
+	&-css {
+		border-color: #29a8df;
+	}
+	&-mysql {
+		border-color: #c4c4c4;
+	}
+	&-react {
+		border-color: #81e30a;
+	}
+}
+
+span.letter-up-size {
+	font-size: 150%;
+}
+
+span.no-break {
+	white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+	h1 {
+		font-size: 1.5rem;
+	}
+	h2 {
+		font-size: 1.3rem;
+	}
+	p {
+		font-size: 1rem;
+	}
+}

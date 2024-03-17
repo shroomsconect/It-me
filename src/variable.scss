@@ -1,0 +1,34 @@
+//Color of global
+$main-text-color: #004079;
+$main-link-color: #0074d9;
+$main-button-bg-color: linear-gradient(
+	135deg,
+	rgba(0, 207, 255, 0.4),
+	rgba(0, 154, 247, 0.5)
+);
+
+//Color of Home Page
+$Home-decorativeTitle-color: linear-gradient(
+	135deg,
+	rgb(0, 207, 255),
+	rgb(0, 154, 247)
+);
+
+//Color of Recruiter Page
+$Recruiter-main-border-color: #009af7;
+
+//Color of Personal Page
+$Personal-main-text-color: #4f553b;
+$Personal-main-border-color: #4f553b;
+$Personal-main-bg-color: #f5ffff;
+$Personal-secondary-border-color: #8ad3ff;
+
+//Color of LegalNotice Page
+$LegalNotice-main-text-color: black;
+$LegalNotice-main-border-color: transparent;
+$LegalNotice-main-bg-color: linear-gradient(
+	135deg,
+	rgba(255, 255, 255, 1),
+	rgba(173, 228, 255, 0.2)
+);
+$LegalNotice-secondary-border-color: rgba(173, 228, 255, 1);

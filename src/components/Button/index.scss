@@ -1,0 +1,200 @@
+@import '../../variable.scss';
+
+.PORTFOLIO-Button {
+	background: none;
+	border: none;
+	position: relative;
+	border-radius: 50px;
+	border: 5px solid $main-link-color;
+	background: $main-button-bg-color;
+	width: 300px;
+	height: 100px;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 10px;
+
+	&:disabled {
+		cursor: wait;
+	}
+
+	& a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		font-size: 30px;
+		border: 5px solid transparent;
+		border-radius: 50px;
+		height: 100%;
+		width: 100%;
+		top: -5px;
+		left: -5px;
+	}
+
+	&:hover &-heart {
+		animation-play-state: running !important;
+	}
+
+	&-heart {
+		position: absolute;
+		color: red;
+		top: -100px;
+		animation-play-state: paused !important;
+
+		@keyframes animate_heart {
+			0% {
+				opacity: 1;
+			}
+			20% {
+				opacity: 0;
+			}
+			100% {
+				opacity: 1;
+			}
+		}
+
+		//top to bottom and left to right
+		//Vertical line (1)
+		&:nth-child(1) {
+			top: 10%;
+			left: 8%;
+			font-size: 0.7em;
+			animation: animate_heart 3s linear infinite;
+		}
+		&:nth-child(2) {
+			top: 60%;
+			left: 11%;
+			font-size: 1em;
+			animation: animate_heart 4s linear infinite;
+		}
+		&:nth-child(3) {
+			top: 37%;
+			left: 4%;
+			font-size: 0.5em;
+			animation: animate_heart 7s linear infinite;
+		}
+
+		//Vertical line (2)
+		&:nth-child(4) {
+			top: 8%;
+			left: 24%;
+			font-size: 1em;
+			animation: animate_heart 4.5s linear infinite;
+		}
+		&:nth-child(5) {
+			top: 32%;
+			left: 22%;
+			font-size: 0.6em;
+			animation: animate_heart 3.7s linear infinite;
+		}
+		&:nth-child(6) {
+			top: 80%;
+			left: 25%;
+			font-size: 0.8em;
+			animation: animate_heart 6s linear infinite;
+		}
+
+		//Vertical line (3)
+		&:nth-child(7) {
+			top: 9%;
+			left: 44%;
+			font-size: 0.6em;
+			animation: animate_heart 5.2s linear infinite;
+		}
+		&:nth-child(8) {
+			top: 77%;
+			left: 39%;
+			font-size: 1em;
+			animation: animate_heart 5.8s linear infinite;
+		}
+
+		//Vertical line (4)
+		&:nth-child(9) {
+			top: 14%;
+			left: 55%;
+			font-size: 0.9em;
+			animation: animate_heart 3.2s linear infinite;
+		}
+		&:nth-child(10) {
+			top: 72%;
+			left: 59%;
+			font-size: 0.7em;
+			animation: animate_heart 4.9s linear infinite;
+		}
+
+		//Vertical line (5)
+		&:nth-child(11) {
+			top: 23%;
+			left: 74%;
+			font-size: 1em;
+			animation: animate_heart 3.4s linear infinite;
+		}
+		&:nth-child(12) {
+			top: 83%;
+			left: 71%;
+			font-size: 0.8em;
+			animation: animate_heart 5.7s linear infinite;
+		}
+
+		//Vertical line (6)
+		&:nth-child(13) {
+			top: 11%;
+			left: 82%;
+			font-size: 0.6em;
+			animation: animate_heart 6.2s linear infinite;
+		}
+		&:nth-child(14) {
+			top: 53%;
+			left: 80%;
+			font-size: 0.5em;
+			animation: animate_heart 6.4s linear infinite;
+		}
+		&:nth-child(15) {
+			top: 79%;
+			left: 87%;
+			font-size: 1em;
+			animation: animate_heart 4.1s linear infinite;
+		}
+
+		//Vertical line (7)
+		&:nth-child(16) {
+			top: 24%;
+			left: 92%;
+			font-size: 0.7em;
+			animation: animate_heart 4.6s linear infinite;
+		}
+		&:nth-child(17) {
+			top: 44%;
+			left: 96%;
+			font-size: 0.6em;
+			animation: animate_heart 5.3s linear infinite;
+		}
+	}
+}
+
+@media not (hover) {
+	.PORTFOLIO-Button {
+		&-heart {
+			animation-play-state: running !important;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.PORTFOLIO-Button {
+		border-radius: 35px;
+		border-width: 4px;
+		width: 200px;
+		height: 70px;
+		font-size: 8px;
+
+		& a {
+			font-size: 18px;
+			border-width: 4px;
+			border-radius: 35px;
+			top: -4px;
+			left: -4px;
+		}
+	}
+}
